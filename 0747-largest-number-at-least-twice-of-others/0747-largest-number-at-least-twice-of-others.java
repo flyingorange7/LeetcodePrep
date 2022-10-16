@@ -10,7 +10,7 @@ class Solution {
                 max = nums[i];
                 maxIndex = i;
             }
-            else if(nums[i] > half && nums[i] < max)
+            else if(nums[i] > half)
                 half = nums[i];
         }
         
