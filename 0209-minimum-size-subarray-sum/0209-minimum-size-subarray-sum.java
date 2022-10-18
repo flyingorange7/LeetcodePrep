@@ -8,7 +8,7 @@ class Solution {
             sum += nums[i];
             
             while(sum >= target){
-                ans = Math.min(ans, i-start +1);
+                ans = Math.min(ans, i- start +1);
                 sum -= nums[start++];
             }
         }
