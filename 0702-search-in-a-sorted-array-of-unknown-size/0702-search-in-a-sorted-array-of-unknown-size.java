@@ -9,7 +9,12 @@
 class Solution {
     public int search(ArrayReader reader, int target) {
         int start = 0;
-        int end = 9999;
+        int end = 1;
+        
+        while(reader.get(end) < target){
+            start = end;
+            end *= 2;
+        }
         
         while(start < end){
             int mid = start + (end - start -1);
