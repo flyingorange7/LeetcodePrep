@@ -1,4 +1,5 @@
 class Solution {
+    /** Binary search solution **/
     public int findDuplicate(int[] nums) {
         int start = 1;
         int end = nums.length -1;
