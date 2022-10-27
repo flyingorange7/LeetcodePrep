@@ -11,9 +11,8 @@ class Solution {
         if(ref.containsKey(n))
             return ref.get(n);
         
-        int val = cal(n-1, ref) + cal(n-2, ref);
-        ref.put(n, val);
+        ref.put(n, cal(n-1, ref) + cal(n-2, ref));
         
-        return val;
+        return ref.get(n);
     }
 }
