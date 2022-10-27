@@ -8,7 +8,7 @@ class Solution {
     }
     
     public int cal(int n, HashMap<Integer, Integer> ref){
-        if(n < 2)
+        if(ref.containsKey(n))
             return ref.get(n);
         
         int val = cal(n-1, ref) + cal(n-2, ref);
