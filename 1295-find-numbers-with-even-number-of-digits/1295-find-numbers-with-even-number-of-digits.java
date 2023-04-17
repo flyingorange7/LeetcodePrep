@@ -3,14 +3,14 @@ class Solution {
         int ans = 0;
         
         for(int i = 0; i < nums.length; i++){
-            if(calculateDigits(nums[i]))
+            if(isEven(nums[i]))
                 ans++;
         }
         
         return ans;
     }
     
-    public boolean calculateDigits(int val){
+    public boolean isEven(int val){
         int count = 0;
         
         while(val > 0){
@@ -18,6 +18,6 @@ class Solution {
             count++;
         }
         
-        return count%2 == 0;
+        return count % 2 == 0;
     }
 }
